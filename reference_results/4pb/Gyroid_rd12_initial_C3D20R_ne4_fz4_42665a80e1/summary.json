@@ -1,0 +1,179 @@
+{
+  "energy": {
+    "SENER_integral_Nmm": 12.980043908245129,
+    "half_sigma_colon_epsilon_Nmm": 12.980043909208227,
+    "linear_ramp_external_work_Nmm": 12.980003516228559
+  },
+  "equilibrium": {
+    "expected_vertical_reaction_N": 1000.0,
+    "left_support": {
+      "RF1_N": -2.4961016364954958e-08,
+      "RF2_N": 5.858544205317173e-10,
+      "RF3_N": 500.001558303833,
+      "node_count": 49,
+      "region": "support_left"
+    },
+    "right_support": {
+      "RF1_N": 0.0,
+      "RF2_N": 2.0461413119399197e-10,
+      "RF3_N": 500.00155997276306,
+      "node_count": 49,
+      "region": "support_right"
+    },
+    "supports_total": {
+      "RF1_N": -2.4961016364954958e-08,
+      "RF2_N": 7.904685517257093e-10,
+      "RF3_N": 1000.0031182765961,
+      "node_count": 98,
+      "region": "supports_total"
+    },
+    "vertical_relative_error": 3.118276596069336e-06,
+    "vertical_residual_N": 0.003118276596069336
+  },
+  "external_work": {
+    "contributions": [
+      {
+        "force_dot_u_Nmm": 0.2783401675211886,
+        "force_per_node_N": -5.208333333333333,
+        "linear_ramp_work_Nmm": 0.1391700837605943,
+        "name": "left_ends",
+        "node_count": 2,
+        "set_name": "SET_LOAD_LEFT_LINE_ENDS",
+        "sum_U3_mm": -0.05344131216406822
+      },
+      {
+        "force_dot_u_Nmm": 12.699389597401023,
+        "force_per_node_N": -10.416666666666666,
+        "linear_ramp_work_Nmm": 6.3496947987005115,
+        "name": "left_interior",
+        "node_count": 47,
+        "set_name": "SET_LOAD_LEFT_LINE_INTERIOR",
+        "sum_U3_mm": -1.2191414013504982
+      },
+      {
+        "force_dot_u_Nmm": 0.27840424445457757,
+        "force_per_node_N": -5.208333333333333,
+        "linear_ramp_work_Nmm": 0.13920212222728878,
+        "name": "right_ends",
+        "node_count": 2,
+        "set_name": "SET_LOAD_RIGHT_LINE_ENDS",
+        "sum_U3_mm": -0.05345361493527889
+      },
+      {
+        "force_dot_u_Nmm": 12.703873023080329,
+        "force_per_node_N": -10.416666666666666,
+        "linear_ramp_work_Nmm": 6.351936511540164,
+        "name": "right_interior",
+        "node_count": 47,
+        "set_name": "SET_LOAD_RIGHT_LINE_INTERIOR",
+        "sum_U3_mm": -1.2195718102157116
+      }
+    ],
+    "force_dot_u_Nmm": 25.960007032457117,
+    "linear_ramp_external_work_Nmm": 12.980003516228559
+  },
+  "midspan": {
+    "U3_bottom_avg_mm": -0.023790143468246167,
+    "U3_midplane_avg_mm": -0.024263927028799544,
+    "U3_top_avg_mm": -0.023759650750731935,
+    "top_minus_bottom_U3_mm": 3.0492717514232076e-05,
+    "x_requested_mm": 120.0,
+    "x_sampled_mm": 120.0
+  },
+  "outputs": {
+    "energy_summary_csv": "C:\\AbaqusScratch\\HOST\\4pb_homogenized\\Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1\\post\\energy_summary.csv",
+    "equilibrium_csv": "C:\\AbaqusScratch\\HOST\\4pb_homogenized\\Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1\\post\\equilibrium.csv",
+    "face_response_csv": "C:\\AbaqusScratch\\HOST\\4pb_homogenized\\Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1\\post\\face_response.csv",
+    "global_response_csv": "C:\\AbaqusScratch\\HOST\\4pb_homogenized\\Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1\\post\\global_response.csv",
+    "section_resultants_csv": "C:\\AbaqusScratch\\HOST\\4pb_homogenized\\Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1\\post\\section_resultants.csv",
+    "through_thickness_profiles_csv": "C:\\AbaqusScratch\\HOST\\4pb_homogenized\\Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1\\post\\through_thickness_profiles.csv"
+  },
+  "overall_status": "PASS",
+  "qa": {
+    "energy_density_consistency": {
+      "SENER_integral_Nmm": 12.980043908245129,
+      "half_sigma_colon_epsilon_Nmm": 12.980043909208227,
+      "relative_error": 7.419836578109686e-11,
+      "relative_tolerance": 5e-05,
+      "status": "PASS"
+    },
+    "external_internal_work": {
+      "SENER_integral_Nmm": 12.980043908245129,
+      "linear_ramp_external_work_Nmm": 12.980003516228559,
+      "note": "For this linear static ramp from zero load, external work is 0.5*sum(F_i*U_i).",
+      "relative_error": 3.111855156739555e-06,
+      "status": "PASS"
+    },
+    "left_right_reaction_diagnostic": {
+      "difference_N": -1.6689300537109375e-06,
+      "left_R3_N": 500.001558303833,
+      "note": "Diagnostic only; fully anisotropic constitutive couplings need not preserve every reflection symmetry.",
+      "relative_to_total_load": 1.6689300537109375e-09,
+      "right_R3_N": 500.00155997276306
+    },
+    "reaction_equilibrium": {
+      "computed_R3_N": 1000.0031182765961,
+      "expected_R3_N": 1000.0,
+      "relative_error": 3.118276596069336e-06,
+      "relative_tolerance": 5e-06,
+      "residual_N": 0.003118276596069336,
+      "status": "PASS"
+    },
+    "required_fields": {
+      "availability": {
+        "COORD": true,
+        "E": true,
+        "IVOL": true,
+        "RF": true,
+        "S": true,
+        "SENER": true,
+        "U": true
+      },
+      "status": "PASS"
+    },
+    "solver_completed": {
+      "completed_successfully": true,
+      "status": "PASS"
+    }
+  },
+  "reduction_methods": {
+    "energy": "SENER is integrated with IVOL. A separate tensor-work check evaluates 0.5*S:E; because Abaqus reports engineering shear strain gamma_ij, each shear contribution is 0.5*tau_ij*gamma_ij.",
+    "face_response": "IVOL-weighted integration-point averages, separated by face sheet, x slab, and element-centroid z layer.",
+    "section_resultants": "Integration-point S and IVOL are integrated over each structured x slab and divided by slab width dx, yielding the mean cross-sectional resultant over that slab.",
+    "through_thickness_profiles": "Width-averaged, IVOL-weighted integration-point fields grouped by the actual integration-point coordinate z_ip. The mean element-centroid z is retained only as a diagnostic/backward-compatible column. If a requested station lies on an x nodal plane, both equidistant adjacent x slabs are averaged."
+  },
+  "schema": "host_4pb_homogenized_post_v2",
+  "sign_conventions": {
+    "coordinates": "Global X=beam longitudinal, Y=width, Z=thickness.",
+    "section_resultants": {
+      "My_beam_convention_Nmm": "-integral_A(z*S11)dA; positive for conventional sagging when top S11 is compressive.",
+      "Nx_raw_N": "integral_A(S11)dA",
+      "Qy_raw_from_S12_N": "integral_A(S12)dA",
+      "Qz_raw_from_S13_N": "integral_A(S13)dA",
+      "int_z_sigma_xx_dA_Nmm": "integral_A(z*S11)dA"
+    },
+    "shear_strain": "Abaqus reports E12/E13/E23 as engineering shear strains gamma_ij. The gamma*_engineering columns are explicit aliases of those reported components.",
+    "transverse_displacement": "U3<0 corresponds to downward deflection."
+  },
+  "source": {
+    "builder_case_hash": "42665a80e1",
+    "builder_case_id": "Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1",
+    "builder_schema": "host_4pb_homogenized_beam_v3",
+    "case_directory": "C:\\AbaqusScratch\\HOST\\4pb_homogenized\\Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1",
+    "frame_index": -1,
+    "frame_value": 1.0,
+    "job_name": "4PB_Gyroid_rd12_ca_initial_ne4_42665a80e1",
+    "manifest_path": "C:\\AbaqusScratch\\HOST\\4pb_homogenized\\Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1\\manifest.json",
+    "manifest_sha256": "6820325ac95724fe005e8515facf1c133ad2c36e1f3286317efd7580106dd5a3",
+    "model_implementation_revision": 2,
+    "odb_path": "C:\\AbaqusScratch\\HOST\\4pb_homogenized\\Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1\\4PB_Gyroid_rd12_ca_initial_ne4_42665a80e1.odb",
+    "odb_size_bytes": 131633468,
+    "step_name": "BENDING"
+  },
+  "units": {
+    "energy": "N*mm",
+    "force": "N",
+    "length": "mm",
+    "stress": "MPa"
+  }
+}

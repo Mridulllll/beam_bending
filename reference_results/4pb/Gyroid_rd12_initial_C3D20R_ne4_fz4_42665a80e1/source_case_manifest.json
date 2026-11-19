@@ -1,0 +1,608 @@
+{
+  "schema": "host_4pb_homogenized_beam_v3",
+  "model_implementation_revision": 2,
+  "case": {
+    "case_id": "Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1",
+    "case_hash": "42665a80e1",
+    "case_hash_full_sha256": "42665a80e1854c657a1fe4d196bee70e063b542b4bab7e93291b8477ca03bb73",
+    "canonical_configuration": {
+      "schema": "host_4pb_homogenized_case_v3",
+      "model_implementation_revision": 2,
+      "core": {
+        "campaign_type": "sizing_shape",
+        "campaign_name": "sizing_shape_merged",
+        "eval_id": "Gyroid_compression_rd12_itag00_itag00",
+        "topology": "Gyroid",
+        "rd_target_fraction": 0.12,
+        "rd_actual_fraction": 0.120008704874171,
+        "load_case": "compression",
+        "target_metric": "Ey",
+        "iteration": 0,
+        "requested_state": "initial",
+        "C_model_MPa": [
+          [
+            4092.09204,
+            2061.32436,
+            2047.99104,
+            -31.1186314,
+            -5.36978245,
+            6.03353977
+          ],
+          [
+            2061.32436,
+            4100.47531,
+            2054.79288,
+            -25.5957842,
+            -5.12599945,
+            16.7679787
+          ],
+          [
+            2047.99104,
+            2054.79288,
+            4082.83234,
+            -11.3133192,
+            0.523090363,
+            14.0821934
+          ],
+          [
+            -31.1186314,
+            -25.5957842,
+            -11.3133192,
+            1078.88091,
+            2.94619799,
+            -2.44957209
+          ],
+          [
+            -5.36978245,
+            -5.12599945,
+            0.523090363,
+            2.94619799,
+            1064.14318,
+            -4.63080406
+          ],
+          [
+            6.03353977,
+            16.7679787,
+            14.0821934,
+            -2.44957209,
+            -4.63080406,
+            1071.33722
+          ]
+        ]
+      },
+      "orientation": {
+        "preset": "target_to_beam_xz",
+        "model_x_from_uc": "+x",
+        "model_y_from_uc": "-z",
+        "model_z_from_uc": "+y",
+        "Q_source_to_model": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ]
+      },
+      "geometry": {
+        "cell_size": 10.0,
+        "n_height": 6,
+        "n_width": 6,
+        "n_shear": 6,
+        "n_moment": 8,
+        "n_overhang": 2,
+        "core_height": 60.0,
+        "width": 60.0,
+        "face_bottom": 1.0,
+        "face_top": 1.0,
+        "total_height": 62.0,
+        "shear_span": 60.0,
+        "load_span": 80.0,
+        "support_span": 200.0,
+        "overhang": 20.0,
+        "length": 240.0,
+        "support_left": 20.0,
+        "support_right": 220.0,
+        "load_left": 80.0,
+        "load_right": 160.0,
+        "midspan": 120.0,
+        "z_bottom": -31.0,
+        "z_top": 31.0,
+        "z_core_bottom": -30.0,
+        "z_core_top": 30.0
+      },
+      "face_material": {
+        "E_MPa": 70000.0,
+        "nu": 0.33
+      },
+      "mesh": {
+        "core_elements_per_cell_edge": 4,
+        "face_elements_through_thickness": 4,
+        "element_type": "C3D20R"
+      },
+      "loading": {
+        "total_applied_load_N": 1000.0,
+        "consistent_line_load_weights": true
+      },
+      "analysis": {
+        "solver": "Abaqus/Standard",
+        "linear_elastic": true,
+        "nlgeom": false
+      }
+    }
+  },
+  "job_name": "4PB_Gyroid_rd12_ca_initial_ne4_42665a80e1",
+  "model_name": "HOST_4PB_HOMOGENIZED",
+  "step_name": "BENDING",
+  "runtime_overrides": {
+    "HOST_4PB_NE_CELL": "4",
+    "HOST_4PB_FACE_NE_Z": "4",
+    "HOST_4PB_ELEMENT_TYPE": "C3D20R",
+    "HOST_4PB_SUBMIT_JOB": "1",
+    "HOST_4PB_NUM_CPUS": "8"
+  },
+  "paths": {
+    "repository_root": "C:\\Users\\nm40ralo\\Nextcloud\\LSM\\Abaqus\\HOST",
+    "local_path_config": "C:\\Users\\nm40ralo\\Nextcloud\\LSM\\Abaqus\\HOST\\config\\paths.local.json",
+    "abaqus_scratch_root": "C:\\AbaqusScratch\\HOST",
+    "simulation_family_root": "C:\\AbaqusScratch\\HOST\\4pb_homogenized",
+    "case_directory": "C:\\AbaqusScratch\\HOST\\4pb_homogenized\\Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1",
+    "tpms_stiffness_database": "C:\\AbaqusScratch\\UCs\\Shells\\TPMS_mapped_thickness\\_stiffness_database\\tpms_stiffness.sqlite"
+  },
+  "provenance": {
+    "git": {
+      "available": true,
+      "commit": "80644914218356acefa826f6989878d3fc4cbbe7",
+      "branch": "theory/beam-bending",
+      "dirty": true,
+      "status_porcelain": [
+        "?? verification/beam_bending_design/"
+      ]
+    },
+    "builder_script": "C:\\Users\\nm40ralo\\Nextcloud\\LSM\\Abaqus\\HOST\\fem\\abaqus\\builders\\build_4pb_homogenized_beam.py",
+    "builder_script_sha256": "92bb9e5ec038596f82bb6712f798ad961919683338871a35146faa90d363f1ba",
+    "query_module": "C:\\Users\\nm40ralo\\Nextcloud\\LSM\\Abaqus\\HOST\\fem\\abaqus\\materials\\query_tpms_stiffness_database_rotated.py",
+    "query_module_sha256": "53b1ce764dc1463670e8370bf040dddfd01f0a0bca584674e3577e01fd6326bb"
+  },
+  "units": {
+    "length": "mm",
+    "force": "N",
+    "stress_stiffness": "MPa"
+  },
+  "coordinates": {
+    "X": "beam longitudinal",
+    "Y": "specimen width",
+    "Z": "sandwich thickness",
+    "sandwich_midplane_global_Z_mm": 0.0
+  },
+  "database_query": {
+    "database_path": "C:\\AbaqusScratch\\UCs\\Shells\\TPMS_mapped_thickness\\_stiffness_database\\tpms_stiffness.sqlite",
+    "campaign_type": "sizing_shape",
+    "campaign_name": "sizing_shape_merged",
+    "topology": "Gyroid",
+    "relative_density_target": 0.12,
+    "relative_density_actual": 0.120008704874171,
+    "optimization_load_case": "compression",
+    "target_metric": "Ey",
+    "requested_state": "initial",
+    "iteration": 0,
+    "state_role": [
+      "initial"
+    ],
+    "eval_id": "Gyroid_compression_rd12_itag00_itag00"
+  },
+  "orientation": {
+    "preset": "target_to_beam_xz",
+    "convention": "v_model = Q_source_to_model * v_source",
+    "abaqus_material_orientation": {
+      "region": "SET_CORE",
+      "system": "GLOBAL",
+      "additional_rotation_deg": 0.0,
+      "reason": "C_hom_model is already expressed in structural global X/Y/Z; the Abaqus material axes therefore coincide with global X/Y/Z."
+    },
+    "model_x_from_unit_cell": "+x",
+    "model_y_from_unit_cell": "-z",
+    "model_z_from_unit_cell": "+y",
+    "Q_source_to_model": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ]
+  },
+  "constitutive": {
+    "canonical_voigt_order": [
+      "xx",
+      "yy",
+      "zz",
+      "xy",
+      "xz",
+      "yz"
+    ],
+    "source_voigt_order": [
+      "xx",
+      "yy",
+      "zz",
+      "yz",
+      "xz",
+      "xy"
+    ],
+    "shear_convention": "engineering",
+    "C_hom_source_raw_MPa": [
+      [
+        4092.09204,
+        2047.99104,
+        2061.32436,
+        -5.36978245,
+        31.1186314,
+        -6.03353977
+      ],
+      [
+        2047.99104,
+        4082.83234,
+        2054.79288,
+        0.523090363,
+        11.3133192,
+        -14.0821934
+      ],
+      [
+        2061.32436,
+        2054.79288,
+        4100.47531,
+        -5.12599945,
+        25.5957842,
+        -16.7679787
+      ],
+      [
+        -5.36978245,
+        0.523090363,
+        -5.12599945,
+        1064.14318,
+        -2.94619799,
+        4.63080406
+      ],
+      [
+        31.1186314,
+        11.3133192,
+        25.5957842,
+        -2.94619799,
+        1078.88091,
+        -2.44957209
+      ],
+      [
+        -6.03353977,
+        -14.0821934,
+        -16.7679787,
+        4.63080406,
+        -2.44957209,
+        1071.33722
+      ]
+    ],
+    "C_hom_model_MPa": [
+      [
+        4092.09204,
+        2061.32436,
+        2047.99104,
+        -31.1186314,
+        -5.36978245,
+        6.03353977
+      ],
+      [
+        2061.32436,
+        4100.47531,
+        2054.79288,
+        -25.5957842,
+        -5.12599945,
+        16.7679787
+      ],
+      [
+        2047.99104,
+        2054.79288,
+        4082.83234,
+        -11.3133192,
+        0.523090363,
+        14.0821934
+      ],
+      [
+        -31.1186314,
+        -25.5957842,
+        -11.3133192,
+        1078.88091,
+        2.94619799,
+        -2.44957209
+      ],
+      [
+        -5.36978245,
+        -5.12599945,
+        0.523090363,
+        2.94619799,
+        1064.14318,
+        -4.63080406
+      ],
+      [
+        6.03353977,
+        16.7679787,
+        14.0821934,
+        -2.44957209,
+        -4.63080406,
+        1071.33722
+      ]
+    ],
+    "abaqus_anisotropic_21_constants_MPa": [
+      4092.09204,
+      2061.32436,
+      4100.47531,
+      2047.99104,
+      2054.79288,
+      4082.83234,
+      -31.1186314,
+      -25.5957842,
+      -11.3133192,
+      1078.88091,
+      -5.36978245,
+      -5.12599945,
+      0.523090363,
+      2.94619799,
+      1064.14318,
+      6.03353977,
+      16.7679787,
+      14.0821934,
+      -2.44957209,
+      -4.63080406,
+      1071.33722
+    ],
+    "rotated_engineering_constants_MPa": {
+      "Ex": 2718.0437930831527,
+      "Ey": 2719.5502902172148,
+      "Ez": 2715.88824007634,
+      "Gxy": 1078.5779489696204,
+      "Gxz": 1064.10066314363,
+      "Gyz": 1071.226077799096,
+      "nuxy": 0.33600016269239247,
+      "nuxz": 0.33247570111188923,
+      "nuyx": 0.33618639342326906,
+      "nuyz": 0.33458094286663626,
+      "nuzx": 0.3322120302324695,
+      "nuzy": 0.3341304080141032
+    },
+    "relative_symmetry_error_before_cleanup": 0.0,
+    "face_material": {
+      "E_MPa": 70000.0,
+      "nu": 0.33
+    }
+  },
+  "geometry": {
+    "cell_size": 10.0,
+    "n_height": 6,
+    "n_width": 6,
+    "n_shear": 6,
+    "n_moment": 8,
+    "n_overhang": 2,
+    "core_height": 60.0,
+    "width": 60.0,
+    "face_bottom": 1.0,
+    "face_top": 1.0,
+    "total_height": 62.0,
+    "shear_span": 60.0,
+    "load_span": 80.0,
+    "support_span": 200.0,
+    "overhang": 20.0,
+    "length": 240.0,
+    "support_left": 20.0,
+    "support_right": 220.0,
+    "load_left": 80.0,
+    "load_right": 160.0,
+    "midspan": 120.0,
+    "z_bottom": -31.0,
+    "z_top": 31.0,
+    "z_core_bottom": -30.0,
+    "z_core_top": 30.0
+  },
+  "mesh": {
+    "element_type": "C3D20R",
+    "core_elements_per_cell_edge": 4,
+    "face_elements_through_thickness": 4,
+    "derived_counts": {
+      "nx": 96,
+      "ny": 24,
+      "nz_core": 24,
+      "nz_face_bottom": 4,
+      "nz_face_top": 4,
+      "core_elements_per_nominal_cell_volume": 64,
+      "actual_node_count": 313649,
+      "actual_element_count": 73728,
+      "expected_structured_element_count": 73728
+    },
+    "node_selection_tolerance_mm": 2.5e-06
+  },
+  "fixture": {
+    "type": "idealized_outer_surface_line_4PB",
+    "total_applied_load_N": 1000.0,
+    "load_direction": "-Z",
+    "consistent_line_load_weights": true,
+    "details": {
+      "support_left_node_count": 49,
+      "support_right_node_count": 49,
+      "load_left_node_count": 49,
+      "load_right_node_count": 49,
+      "left_load": {
+        "n_nodes": 49,
+        "n_segments": 48,
+        "endpoint_force_per_node_N": -5.208333333333333,
+        "interior_force_per_node_N": -10.416666666666666,
+        "resultant_N": -500.0
+      },
+      "right_load": {
+        "n_nodes": 49,
+        "n_segments": 48,
+        "endpoint_force_per_node_N": -5.208333333333333,
+        "interior_force_per_node_N": -10.416666666666666,
+        "resultant_N": -500.0
+      },
+      "left_center_stabilization_node": 16488,
+      "right_center_stabilization_node": 14648,
+      "midspan_top_node_count": 49,
+      "midspan_bottom_node_count": 49
+    },
+    "note": "No rigid rollers/contact in v1. Local stress fields at support/load lines therefore represent ideal line-loading boundary layers and should be separated from bulk theory comparisons."
+  },
+  "normalization": {
+    "recommended_dimensionless_coordinates": {
+      "xi_support": "(x - support_left) / support_span",
+      "xi_specimen": "x / specimen_length",
+      "zeta": "z / total_height"
+    },
+    "dimensionless_geometry": {
+      "L_over_h": 3.870967741935484,
+      "S_over_h": 3.225806451612903,
+      "a_over_h": 0.967741935483871,
+      "load_span_over_h": 1.2903225806451613,
+      "b_over_h": 0.967741935483871,
+      "cell_size_over_h": 0.16129032258064516,
+      "core_height_over_h": 0.967741935483871,
+      "face_bottom_over_h": 0.016129032258064516,
+      "face_top_over_h": 0.016129032258064516
+    },
+    "load_scales": {
+      "total_load_N": 1000.0,
+      "nominal_support_reaction_N": 500.0,
+      "max_constant_moment_Nmm": 30000.0
+    },
+    "response_scales": {
+      "deflection_scale_mm": 0.007992186838147028,
+      "deflection_normalization": "w_bar = w / deflection_scale = E_face*b*h^3*w/(P*S^3)",
+      "bending_stress_scale_MPa": 0.13007284079084286,
+      "bending_stress_normalization": "sigma_bar = sigma_xx / [M_max/(b*h^2)]",
+      "shear_stress_scale_MPa": 0.13440860215053763,
+      "shear_stress_normalization": "tau_bar = tau_xz / [(P/2)/(b*h)]",
+      "moment_normalization": "M_bar = M / M_max",
+      "shear_resultant_normalization": "Q_bar = Q / (P/2)"
+    }
+  },
+  "recommended_profile_stations": [
+    {
+      "name": "support_left",
+      "x_mm": 20.0,
+      "purpose": "support boundary/local transverse-normal-stress zone"
+    },
+    {
+      "name": "left_shear_mid",
+      "x_mm": 50.0,
+      "purpose": "bulk shear-span comparison"
+    },
+    {
+      "name": "load_left",
+      "x_mm": 80.0,
+      "purpose": "load-introduction/local transverse-normal-stress zone"
+    },
+    {
+      "name": "midspan",
+      "x_mm": 120.0,
+      "purpose": "constant-moment/global bending comparison"
+    },
+    {
+      "name": "load_right",
+      "x_mm": 160.0,
+      "purpose": "load-introduction/local transverse-normal-stress zone"
+    },
+    {
+      "name": "right_shear_mid",
+      "x_mm": 190.0,
+      "purpose": "bulk shear-span comparison"
+    },
+    {
+      "name": "support_right",
+      "x_mm": 220.0,
+      "purpose": "support boundary/local transverse-normal-stress zone"
+    }
+  ],
+  "comparison_metrics": {
+    "primary_global": [
+      "transverse deflection w(x), especially midspan",
+      "longitudinal displacement u_x(x,z)",
+      "face-sheet longitudinal strain epsilon_xx(x)",
+      "face-sheet longitudinal stress sigma_xx(x)",
+      "bending resultant M(x) from FE section integration",
+      "transverse shear resultant Q_x(x) from FE section integration",
+      "support reactions and global equilibrium"
+    ],
+    "primary_through_thickness": [
+      "epsilon_xx(z) and sigma_xx(z) at selected x stations",
+      "gamma_xz(z) and tau_xz(z) in the shear span",
+      "epsilon_zz(z) and sigma_zz(z), especially near load/support lines",
+      "interface values at both face/core interfaces"
+    ],
+    "diagnostic_3d": [
+      "width-averaged response versus width-center response",
+      "sigma_yy, tau_xy, tau_yz as measures of departure from 1-D assumptions",
+      "lateral displacement u_y and anticlastic/anisotropic effects",
+      "local boundary-layer decay away from supports and load lines"
+    ],
+    "energetic": [
+      "total elastic strain energy",
+      "normal/bending contribution based on sigma_xx*epsilon_xx",
+      "transverse-shear contribution based on tau_xz*gamma_xz",
+      "transverse-normal contribution based on sigma_zz*epsilon_zz",
+      "energy fractions for theory-regime classification"
+    ],
+    "numerical_quality": [
+      "mesh-convergence of w_mid, face strain, tau_xz and sigma_zz",
+      "reaction-force imbalance",
+      "internal-versus-external work consistency",
+      "DOF count, wall time and memory"
+    ]
+  },
+  "field_outputs": [
+    "U",
+    "RF",
+    "S",
+    "E",
+    "SENER",
+    "IVOL",
+    "COORD"
+  ],
+  "field_output_request": {
+    "name": "F-Output-1",
+    "mode": "modified_default",
+    "variables": [
+      "U",
+      "RF",
+      "S",
+      "E",
+      "SENER",
+      "IVOL",
+      "COORD"
+    ],
+    "frequency": "LAST_INCREMENT"
+  },
+  "analysis": {
+    "linear_elastic": true,
+    "geometrically_linear": true,
+    "nlgeom": false,
+    "solver": "Abaqus/Standard",
+    "num_cpus": 8,
+    "num_domains_job_definition": 8,
+    "multiprocessing_mode": "DEFAULT",
+    "job_scratch_directory": "C:\\AbaqusScratch\\HOST\\tmp"
+  }
+}

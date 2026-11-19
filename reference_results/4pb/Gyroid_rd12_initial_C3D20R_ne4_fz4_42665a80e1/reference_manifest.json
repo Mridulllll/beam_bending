@@ -1,0 +1,195 @@
+{
+  "files": {
+    "energy_summary.csv": {
+      "sha256": "51d62f000cb7bbfe38e5f113100047796b4842215661c331f323873035a47114",
+      "size_bytes": 1006
+    },
+    "equilibrium.csv": {
+      "sha256": "f6104eb53f058a62648075eac5a41d633871f5cc2dc0a6ec171262fd4fc32593",
+      "size_bytes": 364
+    },
+    "face_response.csv": {
+      "sha256": "fa627495250647055621e99ab17d1314b51aa908389371e095bd6e9b62879a25",
+      "size_bytes": 286461
+    },
+    "global_response.csv": {
+      "sha256": "a496581a052d34488f82ce7e0a9dcd1e4159a03cb75713475efcfb574e03789d",
+      "size_bytes": 45603
+    },
+    "section_resultants.csv": {
+      "sha256": "ad3c83f03f3dca85e22dc731a4bc9d149dd64265eb50d8a563dd7ede3785ec93",
+      "size_bytes": 16297
+    },
+    "summary.json": {
+      "sha256": "1f5671565ca8e9f66e4e3a75ecf825263b42bb9c980ce20f5954d95773aedde4",
+      "size_bytes": 8104
+    },
+    "through_thickness_profiles.csv": {
+      "sha256": "10925dc57a7698d7fcbceb57d588f080e368bfc0a6a343395ba06e6d37966ae7",
+      "size_bytes": 204906
+    }
+  },
+  "fixture": {
+    "consistent_line_load_weights": true,
+    "details": {
+      "left_center_stabilization_node": 16488,
+      "left_load": {
+        "endpoint_force_per_node_N": -5.208333333333333,
+        "interior_force_per_node_N": -10.416666666666666,
+        "n_nodes": 49,
+        "n_segments": 48,
+        "resultant_N": -500.0
+      },
+      "load_left_node_count": 49,
+      "load_right_node_count": 49,
+      "midspan_bottom_node_count": 49,
+      "midspan_top_node_count": 49,
+      "right_center_stabilization_node": 14648,
+      "right_load": {
+        "endpoint_force_per_node_N": -5.208333333333333,
+        "interior_force_per_node_N": -10.416666666666666,
+        "n_nodes": 49,
+        "n_segments": 48,
+        "resultant_N": -500.0
+      },
+      "support_left_node_count": 49,
+      "support_right_node_count": 49
+    },
+    "load_direction": "-Z",
+    "note": "No rigid rollers/contact in v1. Local stress fields at support/load lines therefore represent ideal line-loading boundary layers and should be separated from bulk theory comparisons.",
+    "total_applied_load_N": 1000.0,
+    "type": "idealized_outer_surface_line_4PB"
+  },
+  "geometry": {
+    "cell_size": 10.0,
+    "core_height": 60.0,
+    "face_bottom": 1.0,
+    "face_top": 1.0,
+    "length": 240.0,
+    "load_left": 80.0,
+    "load_right": 160.0,
+    "load_span": 80.0,
+    "midspan": 120.0,
+    "n_height": 6,
+    "n_moment": 8,
+    "n_overhang": 2,
+    "n_shear": 6,
+    "n_width": 6,
+    "overhang": 20.0,
+    "shear_span": 60.0,
+    "support_left": 20.0,
+    "support_right": 220.0,
+    "support_span": 200.0,
+    "total_height": 62.0,
+    "width": 60.0,
+    "z_bottom": -31.0,
+    "z_core_bottom": -30.0,
+    "z_core_top": 30.0,
+    "z_top": 31.0
+  },
+  "headline_results": {
+    "SENER_Nmm": 12.980043908245129,
+    "midspan_U3_mm": -0.024263927028799544,
+    "reaction_relative_error": 3.118276596069336e-06
+  },
+  "model": {
+    "actual_element_count": 73728,
+    "actual_node_count": 313649,
+    "core_elements_per_cell_edge": 4,
+    "element_type": "C3D20R",
+    "face_elements_through_thickness": 4,
+    "load_case": "compression",
+    "relative_density_actual": 0.120008704874171,
+    "relative_density_target": 0.12,
+    "state": "initial",
+    "topology": "Gyroid"
+  },
+  "note": "The Abaqus ODB is intentionally not copied. This package contains the compact standardized FE quantities required for HOST/theory comparison; source_case_manifest.json preserves the full model definition and scratch provenance.",
+  "orientation": {
+    "Q_source_to_model": [
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0
+      ]
+    ],
+    "abaqus_material_orientation": {
+      "additional_rotation_deg": 0.0,
+      "reason": "C_hom_model is already expressed in structural global X/Y/Z; the Abaqus material axes therefore coincide with global X/Y/Z.",
+      "region": "SET_CORE",
+      "system": "GLOBAL"
+    },
+    "convention": "v_model = Q_source_to_model * v_source",
+    "model_x_from_unit_cell": "+x",
+    "model_y_from_unit_cell": "-z",
+    "model_z_from_unit_cell": "+y",
+    "preset": "target_to_beam_xz"
+  },
+  "qa": {
+    "energy_density_consistency": {
+      "SENER_integral_Nmm": 12.980043908245129,
+      "half_sigma_colon_epsilon_Nmm": 12.980043909208227,
+      "relative_error": 7.419836578109686e-11,
+      "relative_tolerance": 5e-05,
+      "status": "PASS"
+    },
+    "external_internal_work": {
+      "SENER_integral_Nmm": 12.980043908245129,
+      "linear_ramp_external_work_Nmm": 12.980003516228559,
+      "note": "For this linear static ramp from zero load, external work is 0.5*sum(F_i*U_i).",
+      "relative_error": 3.111855156739555e-06,
+      "status": "PASS"
+    },
+    "left_right_reaction_diagnostic": {
+      "difference_N": -1.6689300537109375e-06,
+      "left_R3_N": 500.001558303833,
+      "note": "Diagnostic only; fully anisotropic constitutive couplings need not preserve every reflection symmetry.",
+      "relative_to_total_load": 1.6689300537109375e-09,
+      "right_R3_N": 500.00155997276306
+    },
+    "reaction_equilibrium": {
+      "computed_R3_N": 1000.0031182765961,
+      "expected_R3_N": 1000.0,
+      "relative_error": 3.118276596069336e-06,
+      "relative_tolerance": 5e-06,
+      "residual_N": 0.003118276596069336,
+      "status": "PASS"
+    },
+    "required_fields": {
+      "availability": {
+        "COORD": true,
+        "E": true,
+        "IVOL": true,
+        "RF": true,
+        "S": true,
+        "SENER": true,
+        "U": true
+      },
+      "status": "PASS"
+    },
+    "solver_completed": {
+      "completed_successfully": true,
+      "status": "PASS"
+    }
+  },
+  "reference_name": "Gyroid_rd12_initial_C3D20R_ne4_fz4_42665a80e1",
+  "schema": "host_4pb_fe_reference_v1",
+  "source": {
+    "builder_schema": "host_4pb_homogenized_beam_v3",
+    "case_directory": "C:\\AbaqusScratch\\HOST\\4pb_homogenized\\Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1",
+    "case_hash": "42665a80e1",
+    "case_id": "Gyroid_rd12_ca_initial_nh6_nb6_na6_nm8_no2_tfb1_tft1_ne4_C3D20R_42665a80e1",
+    "job_name": "4PB_Gyroid_rd12_ca_initial_ne4_42665a80e1",
+    "postprocessor_schema": "host_4pb_homogenized_post_v2"
+  }
+}
