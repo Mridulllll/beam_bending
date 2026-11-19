@@ -1,0 +1,4 @@
+{
+    "abaqus_scratch_root":  "C:\\AbaqusScratch\\HOST",
+    "tpms_stiffness_database":  "C:\\AbaqusScratch\\UCs\\Shells\\TPMS_mapped_thickness\\_stiffness_database\\tpms_stiffness.sqlite"
+}
